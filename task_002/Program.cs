@@ -18,9 +18,10 @@ void FindArray (int [] array)
     int sum = 0;
      for (int i = 0; i < array.Length; i++)
      {
-     if (array[i] % 2 > 0 || array[i] % 2 < 0) sum = sum + array[i];
+                
+     if (i%2> 0) sum = sum + array[i];
      }
-     Console.WriteLine($"Сумма нечетных чисел {sum}");
+     Console.WriteLine($"Сумма чисел,стоящих на нечётных позициях {sum}");
 }
 
 void FillArray(int[] array)
